@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "([]{}[()[]])",
+      "output": "Semua kurung sesuai",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "2",
+      "setup": "",
+      "run": "./main",
+      "input": "([][{])}",
+      "output": "Ada kurung tidak sesuai",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "3",
+      "setup": "",
+      "run": "./main",
+      "input": "({[{[()]}]})",
+      "output": "Semua kurung sesuai",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "4",
+      "setup": "",
+      "run": "./main",
+      "input": "((((())))",
+      "output": "Ada kurung tidak sesuai",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "5",
+      "setup": "",
+      "run": "./main",
+      "input": "[{[{()}()][]}]",
+      "output": "Semua kurung sesuai",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
